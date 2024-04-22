@@ -1,0 +1,14 @@
+
+<!--container containg the filter-result that are filtred-->
+<div class="filterresult-container">
+	<h1>Filter Result</h1>
+	<%issuecollection.forEach((iu)=>{%>
+		<div class="inner-filter-result">
+			<p><span>Title :</span><%=iu.label%></p>
+			<p><span>Description :</span><%=iu.description%><p>
+			<p><span>Label :</span><%=iu.issuefaced%></p>
+			<p><span>Author :</span><%=iu.issueauthor%></p>
+			</div>
+	<%})%>
+	
+</div>

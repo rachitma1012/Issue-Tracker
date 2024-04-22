@@ -1,0 +1,15 @@
+
+   
+   <!--first page that is for containg the link for creating the project and displaying them -->
+   <div class="content">
+        <div class="create-item">
+            <p><img src="track.png" width="25px"><a href="/createproject">Create New Project</a></p>
+        </div>
+     <% collection.forEach(p=>{%>
+        <div class="item">
+            <h3><%=p.projectName%></h3>
+            <h5><%=p.authorname%></h5>
+        </div>
+     <%})%> 
+   
+    </div>

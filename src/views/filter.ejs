@@ -1,0 +1,47 @@
+
+<!--container containg the filter form -->
+<div class="container">
+<div class="filter-container">
+	<form action="/specificfilter" method="post">
+    <h1>Filter</h1>
+    <div class="filter-label-one">
+    	<label for="one">Filter by type one</label>
+    
+    	  <select id="one" name="issueone" required>
+    	  	<option  value="default" selected>Label-one</option>
+            <option value="Bug">Bug</option>
+            <option value="Ui improvment">Ui improvment</option>
+            <option value="server-error">server-error</option>
+            <option value="Database-error">Database-error</option>
+            <option value="Url-problem">Url-problem</option>
+        </select>
+    
+</div>
+ <div class="filter-label-two">
+    	<label for="two">Filter by type two</label>
+    
+    	  <select id="two" name="issuetwo" required>
+    	  	<option  value="default" selected>Label-two</option>
+            <option value="Bug">Bug</option>
+            <option value="Ui improvment">Ui improvment</option>
+            <option value="server-error">server-error</option>
+            <option value="Database-error">Database-error</option>
+            <option value="Url-problem">Url-problem</option>
+        </select>
+    
+</div>
+<div class="byauthor">
+	<label for="author">Filter by Author</label>
+	<input type="text" name="authorfilter" id="author"
+	placeholder="Filter by Author">
+</div>
+<div class="bytitleanddesc">
+	<label class="title-desc" for="titleanddesc">Filter by Title and Description</label>
+	<input type="text" name="titleanddesc" id="titleanddesc" placeholder="Search by title and description">
+</div>
+<div class="filter-btn">
+<button type="submit">Submit</button>
+</div>
+</form>
+</div>
+</div>

@@ -1,0 +1,33 @@
+<!--container containg the whole form-->
+   <div class="container">
+
+    <div class="projectcontainer">
+    <form action="/collection" method="post">;
+        <div>
+        <p>Issue Title</p>
+        <input id="projectname" type="text" name="issuefaced" placeholder="Create issue" required>
+    </div>
+    <div>
+        <p>Issue Description</p>
+        <textarea id="description" name="description" placeholder="Enter Description" rows="4" cols="53" required></textarea>
+    </div>
+    <div>
+        <p>Issue Author</p>
+        <input type="text" id="authorname" name="issueauthor" placeholder="Enter author Name" required>
+    </div>
+    <div>
+        <p>Label</p>
+        <select id="bug-issue" name="issue" required>
+            <option value="Bug">Bug</option>
+            <option value="Ui improvment">Ui improvment</option>
+            <option value="server-error">server-error</option>
+            <option value="Database-error">Database-error</option>
+            <option value="Url-problem">Url-problem</option>
+        </select>
+    </div>
+    <!--button for submitting the form-->
+        <button type="submit" class="btn-btn-issue">Create Project</button>
+    </form>
+</div>
+   </div>
+

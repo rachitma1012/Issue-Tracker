@@ -1,0 +1,48 @@
+<!--container containing the filter button-->
+<div class="filter">
+    <span class="filter-link"><a href="/filter">filter</a></span>
+</div>
+<!--container containg the all the projects that are created-->
+<div class="projectcollection">
+    <%collection.forEach((p)=>{%>
+
+    
+    <div class="inner-container">
+        <div class="project-details">
+        <p class="project-title"><%=p.projectName %></p>
+            
+        <div class="description"><%=p.description %></div> 
+        <p class="name"><%=p.authorname %></p>
+    </div>
+    <!--container containg the all the issue that are created -->
+      <div class="issue-collection">
+        <% if (p.issueraised.length!=0) { %>
+            <!-- HTML or EJS code to be rendered if the condition is true -->
+            <%p.issueraised.forEach((i)=>{%>
+                <div class="issue-container">
+                    <h2><%=i.label %></h2>
+                    <h3><%=i.issuefaced %></h3> 
+                    <p id="bug"><%=i.description%></p>
+                    <h4><%=i.issueauthor %></h4>
+                </div>
+           <% })%>
+        <% } else { %>
+            
+            <div class="issue-container">
+                <h2>No issue faced</h2>
+                <h3></h3>
+                <p id="bug"></p>
+                <h4></h4>
+            </div>
+        <% } %>
+        
+        
+        </div>
+        <!--link to connect the createissue page-->
+        <a href="/createissue?id=<%=p._id %>"><button class="btn-btn-raised">Raised Issue</button></a>
+        </div>
+        <%})%>
+     
+    </div>
+
+

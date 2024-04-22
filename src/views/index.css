@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #cab2a1;
+}
+.navbar{
+    background: #56877a;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.navbar div{
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: 500;
+   }
+   
+.navbar div .title span{
+    color: green;
+    
+}
+.navbar button{
+    height: 30px;
+    width: 100px;
+    margin-top: 16px;
+    margin-right: 50px;
+}
+.navbar button a{
+    text-decoration: none;
+}
+.content{
+    margin-top: 15px;
+    height: 195px;
+    background: #D6DAC8;
+    margin-left: 9px;
+    margin-right: 9px;
+    display: flex;
+    align-items: center;
+    
+}
+.create-item{
+    height: 90%;
+    width: 290px;
+    border: 2px dotted grey;
+    position: relative;
+    left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create-item p a{
+    text-decoration: none;
+    color: grey;
+}
+.item{
+    background: #56877a;
+    height: 80%;
+    width: 150px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-top-left-radius: 15px;
+}
+.container{
+    background: #D6DAC8;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.projectcontainer div{
+    margin-top: 10px;
+}
+.projectcontainer #projectname{
+    height: 37px;
+    width: 384px;
+    border: 2px solid grey;
+    border-radius: 4.5px;
+}
+.projectcontainer #projectname:hover{
+    border: 2px solid red;
+}
+.projectcontainer #description{
+    border: 2px solid grey;
+    border-radius: 4.5px;
+}
+.projectcontainer #description:hover{
+    border: 2px solid red;
+}
+.projectcontainer #authorname{
+    height: 37px;
+    width: 384px;
+    border: 2px solid grey;
+    border-radius: 4.5px;
+}
+.projectcontainer #authorname:hover{
+    border: 2px solid red;
+}
+.projectcontainer .btn-btn-project{
+    margin-top: 18px;
+    height: 32px;
+    width: 384px;
+    background: #00308F;
+    color: antiquewhite;
+    border-radius: 4.5px;
+}
+.projectcontainer .btn-btn-project:hover{
+    background:  #56877a;
+}
+
+.projectcontainer .btn-btn-issue{
+    margin-top: 18px;
+    height: 32px;
+    width: 384px;
+    background: red;
+    color: antiquewhite;
+    border-radius: 4.5px;
+}
+.projectcontainer .btn-btn-issue:hover{
+    background: darkred;
+}
+.filter-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 92%;
+    border: 2px solid grey;
+    margin-top: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.btn-btn-filter{
+    height: 20px;
+    width: 68px;
+    background-color: lightgrey;
+    border: none;
+}
+.projectcollection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner-container{
+    background:  #56877a;
+    backdrop-filter: blur(10px);
+    height: 320px;
+    width: 92%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: antiquewhite;
+
+}
+.project-details{
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.project-title{
+    font-size: 31px;
+    font-weight: 580;
+}
+.description{
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.name{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 5px;
+}
+.issue-collection{
+    height: 140px;
+    width: 80%;
+    overflow: auto;
+}
+.issue-container{
+    background:  #cab2a1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    margin-top: 5px;
+    border: 2px solid wheat;
+}
+.btn-btn-raised{
+    margin-top: 7px;
+    background: rgb(239, 46, 46);
+    height: 30px;
+    width: 100px;
+    color: antiquewhite;
+}
+#bug{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#bug-issue{
+    height: 30px;
+    width: 80px;
+    background: #fff;
+    border:2px solid grey ;
+}
+#bug-issue:hover{
+    border: 2px solid red;
+}
+.filter{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+.filter-link{
+height: 30px;
+width: 100px;
+background: lightgray;
+color: #cab2a1;
+padding-top: 4px;
+padding-left: 19px;
+margin-right: 15px;
+
+
+}
+.filter-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.filter-link a:hover{
+    text-decoration: underline;
+}
+.filter-container{
+	background: none;
+	width: 280px;
+	padding-left:5px;
+	padding-right: 5px;
+	
+}
+.filter-container h1{
+	text-align: center;
+}
+.filter-container div{
+	margin-top: 5px;
+		height: 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.filter-label-one select{
+	height: 30px;
+}
+.filter-label-two select{
+	height: 30px;
+}
+.byauthor input{
+	height: 30px;
+}
+#titleanddesc{
+	height: 30px;
+}
+.filter-btn button{
+	height: 30px;
+    background: #cab2a1;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+}
+.filter-btn button:hover{
+    border: 2px solid blue;
+}
+.filterresult-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.filterresult-container h1{
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+.inner-filter-result{
+	height: 160px;
+	width: 600px;
+	border: 2px solid black;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.inner-filter-result p span{
+	font-size: 19px;
+	font-weight: 507;
+
+}
+
+
+
+
+
+
